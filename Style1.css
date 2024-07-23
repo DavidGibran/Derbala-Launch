@@ -37,6 +37,11 @@ header label{
 header .logo-nav img{
     width: 130px;
 }
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
 header .navbar ul{
     list-style: none;
     display: flex;
