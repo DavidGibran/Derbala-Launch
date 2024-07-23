@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./Style1.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Derbala</title>
 </head>
 <body>
     <header>
         <a href="#" class="logo-nav"><img src="./asset/derbala-logo.svg" alt="nav-logo"></a>
+        <input type="checkbox" id="menu-bar">
+        <label for="menu-bar"><img src="./asset/menu-line.svg" alt="menu-svg"></label>
         <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -22,21 +26,21 @@
     </header>
     <main>
         <section class="sec-services">
-            <div class="header-text1">
+            <div class="header-text1" data-aos="fade-down">
                 <div class="line"></div>
                 <div class="header-services">
                     <h1>Price List</h1>
                 </div>
                 <div class="line"></div>
             </div>
-            <div class="header-text2">
+            <div class="header-text2" data-aos="fade-down">
                 <h1>Paket Harga</h1>
             </div>
             <div class="service-container">
-                <div class="price-container">
+                <div class="price-container" data-aos="fade-up-right">
                     <div class="text-service">
                         <div class="header-card-sv">
-                            <h3>Creative Content Studio</h3>
+                            <h3>Creative Content</h3>
                         </div>
                         <div class="card-start">
                             <P>Mulai Dari</P>
@@ -44,7 +48,7 @@
                         <div class="card-price">
                             <p>Rp. 250k </p>
                         </div>
-                        <p class="text-price-card">Jangan ragu mencapai goals dengan solusi kreatif dan berkualitas tinggi.</p>
+                        <p class="text-price-card">Capai goals dengan solusi kreatif dan berkualitas tinggi.</p>
                     </div>
                     <div class="btn-price-container">
                         <a href="https://wa.me/6285179729875">
@@ -54,7 +58,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="service-list">
+                <div class="service-list" data-aos="fade-left">
                     <div class="element-pricelist">
                         <img src="./asset/element_pl1.png" alt="Epl1">
                         <h1>Graphic Design.</h1>
@@ -69,7 +73,7 @@
                     </div>
                 </div>
             </div>
-            <div class="service-container">
+            <div class="service-container" data-aos="fade-up-right">
                 <div class="price-container">
                     <div class="text-service">
                         <div class="header-card-sv">
@@ -91,7 +95,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="service-list">
+                <div class="service-list" data-aos="fade-left">
                     <div class="element-pricelist">
                         <img src="./asset/element_pl4.png" alt="Epl4">
                         <h1>Landing Page.</h1>
@@ -116,5 +120,9 @@
         </div>
     </div>
 </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>
