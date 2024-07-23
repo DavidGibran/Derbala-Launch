@@ -15,18 +15,31 @@ body main{
 header{
     position: fixed;
     top: 0; left: 0; right: 0;
-    height: 70px;
     background-color: black;
+    width: 100%;
+    height: 70px;
     padding: 0px 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1000;
+    border-bottom: 2px solid orange;
+}
+#menu-bar{
+    display: none;
+}
+header label{
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+    display: none;
 }
 header .logo-nav img{
     width: 130px;
 }
 header .navbar ul{
     list-style: none;
+    display: flex;
 }
 header .navbar ul li{
     position: relative;
@@ -53,20 +66,21 @@ header .navbar ul li a:hover::after{
     opacity: 1;
 }
 /* Start Heroes */
+.main-element img{
+    display: flex;
+    width: 700px;
+    height: auto;
+    padding: 0px 20px 30px 50px;
+}
+.main-text{
+    padding: 30px 50px 50px 0px;
+    width: 500px;
+}
 .hero-container{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 70px;
-}
-.main-element img{
-    display: inline-block;
-    width: 700px;
-    height: auto;
-    padding: 0px 50px 50px 50px;
-}
-.main-text{
-    padding-right: 50px;
+    padding: 70px 70px 70px 70px;
 }
 .com{
     color: orange;
@@ -146,18 +160,18 @@ header .navbar ul li a:hover::after{
     background-color: orange;
     margin: 0px 40px;
 }
-.header-text2{
-    color: #fefefe;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .header-text1{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 50px 20px 0px 20px;
     padding: 20px 20px 5px 20px;
+}
+.header-text2{
+    color: #fefefe;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .card-service > h3, p{
     color: #fefefe;
@@ -267,7 +281,7 @@ footer{
     .btn-price-container{
         display: flex;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 110px;
         transition: all 0.3s ease;
         bottom: 0;
         left: 0;
@@ -275,7 +289,7 @@ footer{
     .btn-price-container-1{
         display: flex;
         justify-content: center;
-        margin-top: 80px;
+        margin-top: 60px;
         transition: all 0.3s ease;
         bottom: 0;
         left: 0;
@@ -308,9 +322,6 @@ footer{
         font-weight: 500;
         font-size: 20px;
     }
-    .text-service p > .text-price-card{
-        color: black;
-    }
     .card-start > p{
         color: black;
         padding-bottom: 10px;
@@ -341,4 +352,398 @@ footer{
         color: #fefefe;
         margin-left: 20px;
     }
-/* Start Our Service Page */
+/* End Our Service Page */
+/* Start Media Query */
+@media only screen and (max-width: 1200px){
+    .sec-hero{
+        padding-top: 85px;
+    }
+    .main-element img{
+        width: 600px;
+    }
+    .text-header{
+        font-size: 25px;
+    }
+    .text-header2 {
+        font-size: 15px;
+    }
+    .btn-konsul-utm{
+        width: 100px;
+        height: 35px;
+    }
+    .btn-konsul-utm > p{
+        font-size: 13px;
+    }
+    .aboutUs-container{
+        width: 700px;
+        height: 400px;
+        margin-top: 20px;
+    }
+    .header-aboutUs{
+        font-size: 25px;
+        padding-bottom: 15px;
+    }
+    .text-aboutUs{
+        font-size: 20px;
+    }
+    .line{
+        width: 160px;
+    }
+    .header-text1, .header-text2{
+        font-size: 17px;
+    }
+    .img-service img{
+        width: 90px;
+        width: 90px;
+    }
+    .img-service, .text-service{
+        padding: 10px;
+    }
+    .card-service{
+        background-color: grey;
+        margin: 40px 15px 40px 15px;
+        padding: 10px;
+        width: 330px;
+        height: 220px;
+        border-radius: 20px;
+    }
+    .header-card, .price-sv{
+        padding-bottom: 5px;
+    }
+    .start-from > p, .price-sv > p{
+        color: orange;
+    }
+    .header-contactUs > h1{
+        color: #fefefe;
+        font-size: 30px;
+    }
+    .text-content > p{
+        font-size: 13px;
+    }
+    .contactUs-text{
+        width: 390px;
+        margin-bottom: 20px;
+    }
+    .text-content > img{
+        width: 25px;
+        height: auto;
+        margin-right: 8px;
+    }
+}
+@media only screen and (max-width: 1024px){
+    .main-element img{
+        display: inline-block;
+        width: 500px;
+        height: auto;
+    }
+    .text-header{
+        font-size: 22px;
+    }
+    .text-header2 {
+        font-size: 15px;
+    }
+    .btn-konsul-utm{
+        width: 100px;
+        height: 35px;
+    }
+    .btn-konsul-utm > p{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .hero-container{
+        padding: 85px 70px 60px 70px;
+    }
+    .main-element img{
+        width: 400px;
+        padding-top: 35px;
+    }
+    .text-header{
+        font-size: 22px;
+    }
+    .text-header2 {
+        font-size: 15px;
+    }
+    .paragraph{
+        font-size: 12px;
+    }
+    .btn-konsul-utm{
+        width: 100px;
+        height: 35px;
+    }
+    .btn-konsul-utm > p{
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width: 800px){
+    header label {
+        display: initial;
+    }
+    header .navbar {
+        position: absolute;
+        top: 70px; 
+        left: 0; 
+        right: 0;
+        background-color: black;
+        display: none;
+        flex-direction: column;  
+        justify-content: center;
+        align-items: center; 
+        z-index: 1000;
+    }
+    header .navbar ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+    header .navbar ul li {
+        width: 100%;
+        list-style: none;
+        text-align: center;
+    }
+    header .navbar ul li a {
+        display: block;
+        padding: 15px;
+        color: white;
+        text-decoration: none;
+    }
+    #menu-bar:checked + label + .navbar {
+        display: flex;
+    }
+    .main-element img{
+        width: 350px;
+        padding-top: 30px;
+    }
+    .text-header{
+        font-size: 15px;
+    }
+    .text-header2 {
+        font-size: 11px;
+    }
+    .paragraph{
+        font-size: 10px;
+    }
+    .btn-konsul-utm{
+        width: 70px;
+        height: 25px;
+    }
+    .btn-konsul-utm > p{
+        font-size: 9px;
+    }
+    .aboutUs-container{
+        width: 520px;
+        height: 340px;
+        margin-top: 20px;
+    }
+    .header-aboutUs{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .text-aboutUs{
+        font-size: 15px;
+    }
+    .line{
+        width: 120px;
+    }
+    .header-text1, .header-text2{
+        font-size: 14px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .img-service img{
+        width: 90px;
+        width: 90px;
+    }
+    .img-service, .text-service{
+        padding: 10px;
+    }
+    .card-service{
+        background-color: grey;
+        margin: 20px 15px 20px 15px;
+        padding: 10px 10px 0px 10px;
+        width: 330px;
+        height: 220px;
+        border-radius: 20px;
+    }
+    .header-card, .price-sv{
+        padding-bottom: 5px;
+    }
+    .start-from > p, .price-sv > p{
+        color: orange;
+    }
+    .contactUs-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-contactUs > h1{
+        color: #fefefe;
+        font-size: 30px;
+        text-align: center;
+    }
+    .text-content > p{
+        font-size: 13px;
+    }
+    .contactUs-text{
+        width: 390px;
+        margin-bottom: 20px;
+    }
+    .text-content > img{
+        width: 25px;
+        height: auto;
+        margin-right: 8px;
+    }
+}
+@media only screen and (max-width: 430px){
+    .hero-container{
+        padding: 20px 30px 20px 40px;
+    }
+    .main-element img{
+        display: none;
+    }
+    .text-header{
+        font-size: 15px;
+    }
+    .text-header2 {
+        font-size: 12px;
+    }
+    .paragraph{
+        font-size: 10px;
+    }
+    .aboutUs-container{
+        width: 320px;
+        height: 190px;
+        margin-top: 20px;
+        padding: 30px 40px 20px 40px;
+    }
+    .header-aboutUs{
+        font-size: 12px;
+        padding-bottom: 6px;
+    }
+    .text-aboutUs{
+        font-size: 10px;
+    }
+    .line{
+        width: 60px;
+        margin: 0px 10px;
+    }
+    .header-text1, .header-text2{
+        font-size: 12px;
+    }
+    .img-service img{
+        width: 80px;
+        width: 80px;
+    }
+    .img-service, .text-service{
+        padding: 10px;
+    }
+    .card-service{
+        background-color: grey;
+        margin: 20px 15px 20px 15px;
+        padding: 10px 10px 0px 10px;
+        width: 300px;
+        height: 180px;
+        border-radius: 20px;
+    }
+    .header-card > h3{
+        font-size: 15px;
+    }
+    .text-service > p{
+        font-size: 12px;
+    }
+    .start-from > p, .price-sv > p{
+        font-size: 12px;
+    }
+    .header-contactUs > h1{
+        font-size: 20px;
+    }
+    .text-content > p{
+        font-size: 12px;
+    }
+    .contactUs-text{
+        width: 300px;
+        margin-bottom: 20px;
+    }
+    .text-content > img{
+        width: 25px;
+        height: auto;
+        margin-right: 8px;
+    }
+    /* Our Service Page */
+    .sec-services{
+        padding: 10px;
+    }
+    .service-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .element-pricelist img{
+        width: 80px;
+    }
+    .element-pricelist h1{
+        font-size: 15px;
+    }
+    .price-container{
+        width: 200px;
+        height: 300px;
+        background-color: orange;
+        padding: 20px;
+        margin: 30px 30px 30px 30px ;
+        border-bottom-left-radius: 0px;
+        border-radius: 10px;
+    }
+    .header-card-sv h3{
+        font-size: 15px;
+    }
+    .card-start p{
+        font-size: 15px;
+    }
+    .card-price p{
+        font-size: 20px;
+    }
+    .text-service:has(> p.text-price-card){
+        font-size: 9px;
+    }
+    .text-service{
+        width: 150px;
+    }
+    .btn-konsul{
+        width: 80px;
+        height: 30px;
+    }
+    .btn-konsul > p{
+        font-size: 10px;
+    }
+    .btn-price-container{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 40px;
+        padding-left: 10px;
+        transition: all 0.3s ease;
+        bottom: 0;
+        left: 0;
+    }
+    .btn-price-container-1{
+        display: flex;
+        justify-content: flex-start;
+        margin-top: 40px;
+        padding-left: 10px;
+        transition: all 0.3s ease;
+        bottom: 0;
+        left: 0;
+    }
+    .service-container{
+        padding-bottom: 50px;
+    }
+
+}
+/* End Media Query */
